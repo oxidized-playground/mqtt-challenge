@@ -18,7 +18,7 @@ impl AdcReader {
     }
 
     pub fn read(&mut self) -> u16 {
-        let adc_value: u16 = nb::block!(self.adc2.read(&mut self.pin))();
+        let adc_value: u16 = nb::block!(self.adc2.read(&mut self.pin)).unwrap();
         println!("Current adc value: {}", adc_value);
         adc_value
     }
