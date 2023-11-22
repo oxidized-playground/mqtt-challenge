@@ -32,7 +32,7 @@ impl<'a, T: embedded_svc::io::asynch::Read + embedded_svc::io::asynch::Write> Mq
         config.add_max_subscribe_qos(rust_mqtt::packet::v5::publish_packet::QualityOfService::QoS1);
         config.add_client_id(client_id);
         config.max_packet_size = 100;
-=
+
         let client =
             MqttClient::<_, 5, _>::new(socket, write_buffer, buffer_len, recv_buffer, recv_buffer_len, config);
 
