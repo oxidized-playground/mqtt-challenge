@@ -138,7 +138,7 @@ fn wifi(
 
     wifi.set_configuration(&Configuration::Mixed(
         ClientConfiguration {
-            ssid: todo!("Give a network name, should be defined a the top"),
+            ssid: todo!("Give a network name, should be defined a the top. See AccessPointConfiguration below on how to convert"),
             password: todo!("Give a password"),
             channel,
             ..Default::default()
