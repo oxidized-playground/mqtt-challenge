@@ -1,7 +1,5 @@
 # mqtt-challenge
 
-In the esp32 directory you will find a Rust project to flash. Make it connect to our mqtt server and say hi!
+Build with `cargo build --release`. Use release to reduce build size, otherwise ESP WiFi stack might not function correctly.
 
-Build with `cargo build --release`
-
-run with `cargo run --release`
+run with `cargo run --release`. Make sure you have the ESP32 connected!
